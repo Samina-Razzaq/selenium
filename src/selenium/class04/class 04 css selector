@@ -1,0 +1,44 @@
+Selenium CLass 4
+================
+>> CSS Selectors:
+It is another way of locating elements on the web page
+
+Syntax:
+tagname[attribute = 'attribute value']
+e.g. button[type='Submit']
+
+------
+Note: CSS does not give an opportunity to locate the elements by its text.
+------
+
+>> Shortcuts for CSS:
+ - Shortcut for ClassName --> '.'
+   Syntax: tagname.classNameValue
+   e.g. input.button
+
+ - Shortcut for ID --> '#'
+   Syntax: tagname#IDValue
+   e.g. input#usernameTextInput
+
+ - contains() Method in CSS:
+   * represents contains method in css
+   Syntax: tagname[attribute *='attribute value']
+   e.g. input[placeholder*='Email']
+
+ - starts-with method in CSS:
+   ^ (Circumflex) symbol represents starts with method
+   Syntax: tagname[attribute ^='starting attribute value']
+   e.g.
+
+ - ends-with method in CSS:
+   $ symbol represents ends-with method in css
+   Syntax: tagname[attribute $= 'ending attribute value']
+   e.g. img[src$='image.png']
+
+>> Xpath vs CSS:
+ - CSS cannot locate the elements by text where Xpath can
+ - no ends-with method in Xpath
+ - CSS is faster than Xpath (finding elements)
+ - CSS has shortcuts which Xpath does not have
+ - no advanced CSS shortcuts
+ - CSS has more simple syntax than Xpath

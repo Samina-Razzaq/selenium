@@ -1,0 +1,21 @@
+ Advanced Xpath:
+   get to the nearest sibling, parent, or ancestor first
+   and the have access to the desired tag
+
+    Use URL: https://syntaxprojects.com/basic-first-form-demo.php
+
+   - to find following sibling:
+   //tag[@attribute='value']/following-sibling::following-tagname
+   //label[text()='Enter message']/following-sibling::input
+
+   - to find preceding sibling:
+   //tag[@attribute='value']/preceding-sibling::preceding-tagname
+   //input[@id="user-message"]/preceding-sibling::label
+
+   - to find ancestor of a tag
+   //ancestor-tag[@attribute='value']/ancestor::child-tagname
+   //form[@id='user-message']/ancestor::input
+
+   - to find parent of a tag
+      //parent-tag[@attribute='value']/parent::child-tagname
+      //div[@class='class-abc']/ancestor::input
