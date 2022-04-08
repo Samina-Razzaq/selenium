@@ -1,0 +1,37 @@
+Implicit wait:
+will be applied for findElement method
+Explicit wait/ web driver wait:
+is used to tell the web driver to wait for a certain condition before throwing an exception
+for a specified condition
+works with expectedConditions class and
+wait until certain conditions are met or the given time is achieved
+* sign in xpath is a wild card which can identify any tagname
+
+Fluent Wait:
+is a global wait(applies to whole script) used to tell the web driver to wait for certain condition as well as its
+frequency before throwing an exception
+
+implicit wait: waits to locate the element
+Explicit wait: waits until certain condition
+Fluent wait: sets timeouts, polling and ignore needed exception
+
+Web Tables:
+are elements on the web page, which are constructed by having rows and columns
+Types of Web tables:
+1. Static web table: data is fixed
+2. Dynamic web table:data change happens
+
+WebTables consists of different sections or parts
+<table>
+    <thead>
+          <tr>
+              <th></th>--column data or heading
+          <tr>
+    <thead>
+    <tbody>
+             <tr>
+                   <td></td>---table data
+             <tr>
+    <tbody>
+<table>
+

@@ -18,14 +18,17 @@ public class Task3 {
         WebDriver driver=new ChromeDriver();
         driver.get(url);
         Thread.sleep(2000);
-        WebElement searchBox= driver.findElement(By.id("gh-cat"));
+        WebElement searchBox= driver.findElement(By.xpath("//select[@aria-label='Select a category for search']"));
         Select selectSearchBox=new Select(searchBox);
         Thread.sleep(2000);
        List<WebElement> options= selectSearchBox.getOptions();
        for(WebElement opt:options){
           String text= opt.getText();
-           System.out.println(text);
-           selectSearchBox.selectByValue("Computers/Tablets&Networking");
+          // System.out.println(text);
+           if(text.equals("Computers/Tables & Networking")){
+               selectSearchBox.selectByVisibleText(text);
+
+           }
 
        }
         Thread.sleep(2000);

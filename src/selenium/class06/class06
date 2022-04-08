@@ -12,8 +12,9 @@ we cannot proceed until it is handled.
  3- Widows based alerts-- we cannot handle with Selenium
 
  Types of JS alerts.
+ we handle them by switch to method
  1- Simple alert-- click ok
- 2- confirmation alert. --enter cancel or chick ok
+ 2- confirmation alert. --enter cancel or click ok
  3-Prompt alert. ---enter the text and click ok or cancel.
  4-
  To handle Js alerts we only have 4 methods:

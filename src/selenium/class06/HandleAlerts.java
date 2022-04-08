@@ -19,6 +19,7 @@ public class HandleAlerts {
             Alert simpleAlert=driver.switchTo().alert();
             Thread.sleep(2000);
             simpleAlert.accept();//handling simple alert
+
            WebElement confirmAlertButton= driver.findElement(By.id("confirm"));
            confirmAlertButton.click();
             Thread.sleep(2000);
