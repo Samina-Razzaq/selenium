@@ -19,6 +19,7 @@ enter text and click disable ,verify the text box is disabled*/
         WebDriver driver = new ChromeDriver();
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        //click on checkbox and click on remove, verify the text
         WebElement checkBox=driver.findElement(By.xpath("//input[@type='checkbox']"));
         checkBox.click();
         WebElement remove= driver.findElement(By.xpath("//button[text()='Remove']"));
@@ -26,16 +27,15 @@ enter text and click disable ,verify the text box is disabled*/
         WebElement message= driver.findElement(By.xpath("//p[@id='message']"));
         String msgText=message.getText();
         System.out.println(msgText);
-
+        //click on enable verify the text box is enabled
         WebElement enableB= driver.findElement(By.xpath("//button[text()='Enable']"));
         enableB.click();
         WebElement enableBMessage= driver.findElement(By.xpath("//p[@id='message']"));
         String enableText=enableBMessage.getText();
         System.out.println(enableText);
-
+       //enter text and click disable ,verify the text box is disabled
        WebElement textBox= driver.findElement(By.xpath("//input[@type='text']"));
        textBox.sendKeys("abcd");
-
        WebElement disable=driver.findElement(By.xpath("//button[text()='Disable']"));
        disable.click();
        WebElement disableTextMessage=driver.findElement(By.xpath("//p[@id='message']"));

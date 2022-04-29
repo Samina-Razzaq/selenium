@@ -1,0 +1,14 @@
+How to handle a calenders:
+1. Click on calender
+2. locate the month and then get its text
+3. If the desired text is not visible---> we will keep clicking on next
+ and keep updating the text of the month
+4.As soon as we found our desired month-->grab all the cells from the table.
+5. loop through the cells
+6. Once the cell value is matched with our condition--->click on the matched date.
+
+Why do we need screenshots in Testing?
+In testing it is very important to take screenshots in order for us to prove that our
+test case covered certain functionality.
+
+In selenium inorder to take screenshots we will be using TakeScreenShot Interface;
